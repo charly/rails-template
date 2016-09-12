@@ -1,0 +1,14 @@
+!!! 5
+%html
+  %head
+    %title= "gimme a name"
+    = stylesheet_link_tag "application"
+    =# favicon_link_tag
+  %body
+    #header
+      .row=link_to "some link", "/"
+    #page
+      .row= yield
+    #footer
+      .row=
+

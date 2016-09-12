@@ -1,0 +1,79 @@
+source 'http://rubygems.org'
+
+gem 'rails', '~> 4.2'
+
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
+
+gem 'pg'
+gem 'json'
+
+gem 'siphon'
+gem 'nexter'
+gem 'paramount'
+
+# Assets gem
+# =========================
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'uglifier', '>= 1.0.3'
+gem "haml-rails"
+
+
+# CSS/Javascript gem
+# =========================
+gem 'sass-rails'
+gem 'bootstrap-sass'
+gem "react-rails"
+gem "jquery-rails"
+gem 'jquery-ui-rails'
+# gem "compass-rails"
+# gem "foundation-rails"
+
+# Rails 3.2 => 4.0 Migration gem
+# ==============================
+# gem 'protected_attributes'
+# gem 'rails-observers'
+# gem 'actionpack-page_caching'
+# gem 'actionpack-action_caching'
+
+# Classics
+# ========
+# gem "active_model_serializers"
+gem "redcarpet"
+gem "will_paginate"
+gem 'will_paginate-bootstrap'
+gem "simple_form"
+gem "carrierwave"
+gem "mini_magick", "~> 3.5"
+gem 'virtus'
+gem 'addressable'
+# gem 'ransack'
+# gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master'
+# gem "devise"
+
+# Gmap & Cie
+# ==========
+# gem "geocoder"
+# gem "gmaps4rails"
+
+# Services
+# =========
+# gem "faraday"
+# gem "roo"
+
+group :development do
+  gem "thin"
+  gem "quiet_assets"
+  gem "pry-rails"
+  gem "pry-byebug"
+  gem "pry-stack_explorer"
+  gem "rails-admin-scaffold"
+  gem 'spring'
+end
+
+group :test do
+  # gem "rspec-rails"
+end
+
+
+

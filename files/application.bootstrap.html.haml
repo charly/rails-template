@@ -1,0 +1,27 @@
+!!! 5
+%html
+  %head
+    %title= "NAME"
+    = stylesheet_link_tag "application", media: "all"
+    = csrf_meta_tags
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+  %body
+    %header.navbar.navbar-inverse(role="banner")
+      .container
+        .navbar-header
+          = link_to "NAME", "/", class: 'navbar-brand'
+        .navbar-collapse
+          %ul.nav.navbar-nav
+            %li= link_to "NAME", "/NAME/#"
+
+    .container
+      = yield
+
+    %footer(style="height:60px")
+      .container
+        %hr
+        .row
+          .text-center=link_to "NAME", "/"
+
+    = javascript_include_tag "application"
